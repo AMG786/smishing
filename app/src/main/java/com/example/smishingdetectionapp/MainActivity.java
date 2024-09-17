@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigationView = findViewById(R.id.bottom_navigation);
 
 /*
-        BottomNavigationView nav = findViewById(R.id.bottom_navigation); //variable assignment
+       BottomNavigationView nav = findViewById(R.id.bottom_navigation); //variable assignment
         nav.setSelectedItemId(R.id.nav_home); //home page selected by default
         nav.setOnItemSelectedListener(menuItem -> { //selected item listener
 
@@ -97,10 +97,11 @@ public class MainActivity extends AppCompatActivity {
 
                 if (id == R.id.nav_home) {
                     // Handle Home navigation
+                }
+                else if (id == R.id.nav_news) {
+                    startActivity(new Intent(getApplicationContext(), NewsActivity.class));
                 } else if (id == R.id.nav_settings) {
                     startActivity(new Intent(getApplicationContext(), SettingsActivity.class));
-                } else if (id == R.id.nav_settings) {
-                    startActivity(new Intent(getApplicationContext(), HelpActivity.class));
                 }
 
                 drawerLayout.closeDrawer(GravityCompat.START);
@@ -131,8 +132,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         // Determine if running on a tablet
-        //boolean isTablet = getResources().getBoolean(R.bool.isTablet);
-        boolean isTablet = false;
+        boolean isTablet = getResources().getBoolean(R.bool.isTablet);
         if (isTablet) {
             bottomNavigationView.setVisibility(View.GONE); // Hide BottomNavigationView on tablets
         } else {
