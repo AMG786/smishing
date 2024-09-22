@@ -58,32 +58,8 @@ public class MainActivity extends AppCompatActivity {
         navigationView = findViewById(R.id.nav_view);
         bottomNavigationView = findViewById(R.id.bottom_navigation);
 
-/*
-       BottomNavigationView nav = findViewById(R.id.bottom_navigation); //variable assignment
-        nav.setSelectedItemId(R.id.nav_home); //home page selected by default
-        nav.setOnItemSelectedListener(menuItem -> { //selected item listener
 
-            int id = menuItem.getItemId();
-            if (id == R.id.nav_home) {
-                //Empty when currently selected.
-                return true;
-            }
-            else if(id == R.id.nav_news) {
-
-                startActivity(new Intent(getApplicationContext(), NewsActivity.class));//Starts the News activity
-                overridePendingTransition(0,0);//Removes the sliding animation
-                finish();
-                return true;
-            } else if (id == R.id.nav_settings) {
-                startActivity(new Intent(getApplicationContext(), SettingsActivity.class));
-                overridePendingTransition(0, 0);
-                finish();
-                return true;
-            }
-            return false;
-        })*/
-
-// Setup Drawer Toggle
+        // Setup Drawer Toggle
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawerLayout.addDrawerListener(toggle);
