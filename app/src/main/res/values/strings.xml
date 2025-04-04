@@ -286,4 +286,40 @@
     <string name="yes">Yes</string>
     <string name="no">No</string>
 
+    <string name="forgot_password_title">Forgot Password?</string>
+    <string name="forgot_password_subtitle">Enter your email to receive a reset OTP</string>
+    <string name="send_otp_button">Send OTP</string>
+    <string name="new_password_title">Set New Password</string>
+    <string name="new_password_label">New Password</string>
+    <string name="confirm_password_label">Confirm Password</string>
+    <string name="submit_button">Submit</string>
+
+    <string name="otp_verification_title">Verify OTP</string>
+    <string name="otp_verification_subtitle">Enter the 6-digit code sent to %s</string>
+    <string name="otp_hint">Enter OTP</string>
+    <string name="resend_otp_text">Resend OTP</string>
+    <string name="verify_button_text">Verify</string>
+    <string name="otp_sent_to">OTP sent to %s</string>
+    <string name="resend_otp_in">Resend OTP in %d seconds</string>
+    <string name="resend_otp">Resend OTP</string>
+
+    <!-- Forgot Password Screen -->
+
+
+    <!-- OTP Verification Screen -->
+    <string name="verify_otp">Verify OTP</string>
+
+    <string name="verify">Verify</string>
+
+    <!-- New Password Screen -->
+
+    <string name="new_password_hint">New password</string>
+    <string name="confirm_password_hint">Confirm password</string>
+    <string name="password_requirements">Must be 8+ characters with uppercase and special character</string>
+
+
+    <!-- Common -->
+    <string name="back_button_desc">Navigate back</string>
+    <string name="logo_desc">App logo</string>
+
 </resources>

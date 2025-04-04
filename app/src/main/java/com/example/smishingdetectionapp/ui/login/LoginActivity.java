@@ -25,6 +25,7 @@ import com.example.smishingdetectionapp.R;
 import com.example.smishingdetectionapp.SharedActivity;
 import com.example.smishingdetectionapp.databinding.ActivityLoginBinding;
 import com.example.smishingdetectionapp.detections.DatabaseAccess;
+import com.example.smishingdetectionapp.ui.Forgotpassword.ForgotPasswordActivity;
 import com.example.smishingdetectionapp.ui.Register.RegisterMain;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
@@ -145,7 +146,15 @@ public class LoginActivity extends AppCompatActivity {
         gsc.signOut().addOnCompleteListener(task -> {
             Toast.makeText(this, "Signed out. Ready for fresh authentication.", Toast.LENGTH_SHORT).show();
         });
+        binding.forgotPasswordButton.setOnClickListener(v -> {
+            // Create intent to launch ForgotPasswordActivity
+            Intent intent = new Intent(this, ForgotPasswordActivity.class);
 
+            // Add any necessary extras (like email if you want to pre-fill)
+            // intent.putExtra("email", emailInput.getText().toString());
+
+            startActivity(intent);
+        });
         // Handle Google Sign-In button click
         googleBtn.setOnClickListener(v -> {
             GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(this);

@@ -6,9 +6,11 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+ <!-- res/values/colors.xml -->
+ <color name="gray">#808080</color>
 
     <!-- New Colors -->
-    <color name="navy_blue">#FF05445E</color>
+<!--    <color name="navy_blue">#FF05445E</color>-->
     <color name="blue_grotto">#FF189AB4</color>
     <color name="blue_green">#FF75E6DA</color>
     <color name="baby_blue">#FFD4F1F4</color>
@@ -16,4 +18,12 @@
     <color name="azure">#F0FFFF</color>
     <color name="red">#FFFF0000</color>
  <color name="cream">#F5EDD6</color>
+ <!-- Primary Button Color -->
+ <color name="navy_blue">#2C3E50</color>
+
+ <!-- Darker Pressed State -->
+ <color name="navy_blue_dark">#1A2635</color>
+
+ <!-- Text Color -->
+<!-- <color name="white">#FFFFFF</color>-->
 </resources>
